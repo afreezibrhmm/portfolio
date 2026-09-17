@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projects by Afreez Ibrahim — explore AI learning tools, deep learning diagnostics, computer vision streaming, and modern web apps." />
+  <title>Projects — Afreez Ibrahim</title>
+  <link rel="icon" type="image/png" href="assets/heart.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .project-links-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .proj-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 1.6vh;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1px solid #111111;
+      color: #111111;
+      background: transparent;
+      transition: all 0.25s ease;
+      text-decoration: none;
+    }
+    .proj-btn:hover {
+      background: #111111;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+    .proj-btn-primary {
+      background: #111111;
+      color: #ffffff;
+    }
+    .proj-btn-primary:hover {
+      background: #333333;
+    }
+  </style>
+</head>
+<body>
+  <!-- Under Construction Announcement Bar -->
+  <section class="announcement-banner">
+    <p>This website is under construction; Stalk at your own risk ;)</p>
+  </section>
+
+  <!-- Navigation Bar back to home -->
+  <div class="projects-page-nav">
+    <a href="index.html" class="back-home-link">
+      <span>&larr;</span> Back to Home
+    </a>
+  </div>
+
+  <main class="page-container">
+    <section class="section-wrapper" style="min-height: auto; padding-top: 4vh;">
+      <h1 class="section-heading">Projects</h1>
+      <p class="section-subheading">A showcase of full-stack AI, computer vision &amp; cloud systems</p>
+
+      <div class="projects-container">
+        <!-- Project 1: AI Python Tutor -->
+        <div class="project-card">
+          <h2 class="project-title">AI Python Tutor</h2>
+          <div class="project-cover-wrap">
+            <img src="assets/cover_ai_tutor.png" alt="AI Python Tutor Cover" />
+          </div>
+          <div class="project-preview-row">
+            <div class="project-snapshot">
+              <img src="assets/snapshot_ai_tutor.png" alt="AI Python Tutor Snapshot" />
+            </div>
+            <div class="project-desc-col">
+              <strong>AI Python Tutor</strong> is an interactive educational platform designed to help students master Python through real-time code evaluation and AI-generated feedback. Featuring role-based authentication (RBAC), students write, run, and debug code directly in the browser while instructors access a telemetry dashboard.
+              <div class="project-links-row">
+                <a href="https://ai-python-tutor-frontend-1.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-primary">Live Demo &nearr;</a>
+                <a href="https://github.com/afreezibrhmm/ai_python_tutor_frontend_1" target="_blank" rel="noopener noreferrer" class="proj-btn">GitHub Repo &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: MedAI Diagnostics -->
+        <div class="project-card">
+          <h2 class="project-title">MedAI Diagnostics</h2>
+          <div class="project-cover-wrap">
+            <img src="assets/cover_medai.png" alt="MedAI Diagnostics Cover" />
+          </div>
+          <div class="project-preview-row">
+            <div class="project-desc-col">
+              <strong>MedAI Diagnostics</strong> is an advanced medical diagnostics dashboard for predictive breast cancer detection. It deploys an ensemble of 4 AI architectures: Deep Neural Network (MLP), XGBoost, LightGBM, and Random Forest, complete with a FastAPI inference backend and real-time clinical probability charts.
+              <div class="project-links-row">
+                <a href="https://github.com/afreezibrhmm/breast_cancer_prediction" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-primary">GitHub Repo &nearr;</a>
+              </div>
+            </div>
+            <div class="project-snapshot" style="margin-left: -5%; margin-right: 0;">
+              <img src="assets/snapshot_medai.png" alt="MedAI Diagnostics Snapshot" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Secure WebCam -->
+        <div class="project-card">
+          <h2 class="project-title">Secure WebCam</h2>
+          <div class="project-cover-wrap">
+            <img src="assets/cover_secure_webcam.png" alt="Secure WebCam Cover" />
+          </div>
+          <div class="project-preview-row">
+            <div class="project-snapshot">
+              <img src="assets/snapshot_secure_webcam.png" alt="Secure WebCam Snapshot" />
+            </div>
+            <div class="project-desc-col">
+              <strong>Secure WebCam</strong> is a modern computer vision and encrypted video streaming application. It provides real-time WebRTC media connectivity, computer vision frame processing, and AES-256 secure channel telemetry with a high-performance React front end.
+              <div class="project-links-row">
+                <a href="https://secure-webcam-frontend.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-primary">Live Demo &nearr;</a>
+                <a href="https://github.com/afreezibrhmm/secure_webcam_frontend" target="_blank" rel="noopener noreferrer" class="proj-btn">GitHub Repo &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Cattle Breed Classifier -->
+        <div class="project-card">
+          <h2 class="project-title">Cattle Breed Classifier</h2>
+          <div class="project-cover-wrap">
+            <img src="assets/cover_cattle.png" alt="Cattle Breed Classifier Cover" />
+          </div>
+          <div class="project-preview-row">
+            <div class="project-desc-col">
+              <strong>Cattle Breed Classifier</strong> uses deep convolutional neural networks (CNNs) in Python and PyTorch/TensorFlow to accurately identify and classify cattle breeds from camera images with custom data augmentation and evaluation metrics.
+              <div class="project-links-row">
+                <a href="https://github.com/afreezibrhmm/cattle_classifier" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-primary">GitHub Repo &nearr;</a>
+              </div>
+            </div>
+            <div class="project-snapshot" style="margin-left: -5%; margin-right: 0;">
+              <img src="assets/snapshot_cattle.png" alt="Cattle Breed Snapshot" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Snap Clicks Studio -->
+        <div class="project-card">
+          <h2 class="project-title">Snap Clicks Studio</h2>
+          <div class="project-cover-wrap">
+            <img src="assets/cover_snapclicks.png" alt="Snap Clicks Studio Cover" />
+          </div>
+          <div class="project-preview-row">
+            <div class="project-snapshot">
+              <img src="assets/snapshot_snapclicks.png" alt="Snap Clicks Snapshot" />
+            </div>
+            <div class="project-desc-col">
+              <strong>Snap Clicks</strong> is an online creative portfolio and studio showcase platform crafted with modern CSS grid, sleek typography, interactive modal galleries, and booking workflows deployed on Vercel Edge.
+              <div class="project-links-row">
+                <a href="https://snapclicks.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-primary">Live Demo &nearr;</a>
+                <a href="https://github.com/afreezibrhmm/snap_clicks" target="_blank" rel="noopener noreferrer" class="proj-btn">GitHub Repo &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Indian Vehicle Info -->
+       
+
+    <!-- Footer -->
+    <section class="talk-section" style="min-height: 40vh; padding: 4vh 0;">
+      <div class="talk-center-wrap">
+        <a href="index.html#contact" class="say-hello-cta">Let's connect &rarr;</a>
+      </div>
+      <div class="footer-row">
+        <p class="footer-text">Made on earth with</p>
+        <span class="footer-heart"><img src="assets/heart.png" alt="heart" /></span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
