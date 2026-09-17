@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Say Hello Email Interaction
   const sayHelloBtn = document.getElementById('sayHelloBtn');
   const toastMsg = document.getElementById('toastMsg');
-  const emailAddress = 'afreezibrahim@gmail.com';
+  const emailAddress = 'ibrahimafreez@gmail.com';
 
   if (sayHelloBtn && toastMsg) {
     sayHelloBtn.addEventListener('click', (e) => {
@@ -36,28 +36,28 @@ document.addEventListener('DOMContentLoaded', () => {
     heroImg.style.cursor = 'pointer';
     heroImg.setAttribute('title', 'Click to toggle between sketch and original photo');
 
-    //heroImg.addEventListener('click', () => {
-      //heroImg.style.opacity = '0';
-      //heroImg.style.transform = 'scale(0.96)';
+    heroImg.addEventListener('click', () => {
+      heroImg.style.opacity = '0';
+      heroImg.style.transform = 'scale(0.96)';
       
-      //setTimeout(() => {
-        //if (isSketch) {
-          //heroImg.src = 'assets/afreez_original.jpg';
-          //heroImg.style.borderRadius = '16px';
-          //heroImg.style.objectFit = 'cover';
-          //showToast('Switched to original photo');
-        //} else {
-          //heroImg.src = 'assets/afreez_sketch.png';
-          //heroImg.style.borderRadius = '0';
-          //heroImg.style.objectFit = 'contain';
-          //showToast('Switched to sketch portrait');
-        //}
-        //isSketch = !isSketch;
-        //heroImg.style.opacity = '1';
-        //heroImg.style.transform = 'scale(1)';
-      //}, 200);
-    //});
-  //}
+      setTimeout(() => {
+        if (isSketch) {
+          heroImg.src = 'assets/afreez_original.jpg';
+          heroImg.style.borderRadius = '16px';
+          heroImg.style.objectFit = 'cover';
+          showToast('Switched to original photo');
+        } else {
+          heroImg.src = 'assets/afreez_sketch.png';
+          heroImg.style.borderRadius = '0';
+          heroImg.style.objectFit = 'contain';
+        showToast('Switched to sketch portrait');
+        }
+        isSketch = !isSketch;
+        heroImg.style.opacity = '1';
+        heroImg.style.transform = 'scale(1)';
+      }, 200);
+    });
+  }
 
   // Smooth Scrolling for Internal Links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
